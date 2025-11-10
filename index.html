@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcomanías y Logotipos para Bodegas - Villa Abecia</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f5f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Encabezado */
+        header {
+            background-color: #5c1a1a;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            font-size: 28px;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 25px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #e6c8a0;
+        }
+        
+        /* Hero Section */
+        .hero {
+            /*background: linear-gradient(rgba(92, 26, 26, 0.8), rgba(92, 26, 26, 0.8)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%235c1a1a"/><path d="M0,0 L100,100 M100,0 L0,100" stroke="%237a2c2c" stroke-width="2"/></svg>');*/
+            background: linear-gradient(rgba(92, 26, 26, 0.8), rgba(92, 26, 26, 0.8)), url('.//imagenes/villa.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #e6c8a0;
+            color: #5c1a1a;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: #d4b68c;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Sección de servicios */
+        .services {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #5c1a1a;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: #666;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: #f9f5f0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-img {
+            height: 200px;
+            background-color: #e6c8a0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            color: #5c1a1a;
+        }
+        
+        .service-content {
+            padding: 25px;
+        }
+        
+        .service-content h3 {
+            margin-bottom: 15px;
+            color: #5c1a1a;
+        }
+        
+        /* Sección de productos */
+        .products {
+            padding: 80px 0;
+            background-color: #f9f5f0;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .product-img {
+            height: 200px;
+            background-color: #e6c8a0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #5c1a1a;
+        }
+        
+        .product-content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .product-content h3 {
+            margin-bottom: 10px;
+            color: #5c1a1a;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #5c1a1a;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+        
+        /* Sección de testimonios */
+        .testimonials {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .testimonial-card {
+            background-color: #f9f5f0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .testimonial-text::before {
+            content: """;
+            font-size: 60px;
+            color: #e6c8a0;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            opacity: 0.3;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .author-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #e6c8a0;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #5c1a1a;
+            font-weight: bold;
+        }
+        
+        .author-info h4 {
+            color: #5c1a1a;
+        }
+        
+        /* Sección de contacto */
+        .contact {
+            padding: 80px 0;
+            background-color: #5c1a1a;
+            color: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-item i {
+            margin-right: 15px;
+            font-size: 20px;
+            color: #e6c8a0;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        /* Pie de página */
+        footer {
+            background-color: #3a1010;
+            color: white;
+            padding: 40px 0 20px;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 20px;
+            color: #e6c8a0;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-column ul li a:hover {
+            color: #e6c8a0;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #5c1a1a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: #e6c8a0;
+            color: #5c1a1a;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #ccc;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i>🍷</i>
+                    <span>Villa Abecia Design</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <h1>Calcomanías y Logotipos para Bodegas</h1>
+            <p>Diseños exclusivos y de alta calidad para realzar la identidad de tus vinos y singanis de Villa Abecia</p>
+            <a href="#contacto" class="btn">Solicitar Presupuesto</a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Ofrecemos soluciones personalizadas para destacar tu bodega en el mercado</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                    <img src=".//imagenes/logo1.jpg" alt="Calcomanias">
+                    </div>
+                    <div class="service-content">
+                        <h3>Diseño de Logotipos</h3>
+                        <p>Creación de identidad visual única que refleje la esencia de tu bodega y productos.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                    <img src=".//imagenes/calcomania1.jpg" alt="Calcomanias">
+                       <!--  🏷️ -->
+                    </div>
+                    <div class="service-content">
+                        <h3>Calcomanías Personalizadas</h3>
+                        <p>Etiquetas adhesivas de alta calidad para botellas, barriles y equipos de tu bodega.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                    <img src=".//imagenes/calcomania2.jpg" alt="Calcomanias">
+                        <!--📦 -->
+                    </div>
+                    <div class="service-content">
+                        <h3>Material Promocional</h3>
+                        <p>Diseño de etiquetas, folletos y material gráfico para promocionar tus productos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section class="products" id="productos">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Productos</h2>
+                <p>Calcomanías y logotipos de máxima calidad para la industria vitivinícola</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-img">
+                    <img src=".//imagenes/logo.jpg" alt="Logotipo 1">
+                       <!-- 🍇 -->
+                    </div>
+                    <div class="product-content">
+                        <h3>Calcomanías para Botellas</h3>
+                        <p>Resistentes a la humedad y cambios de temperatura.</p>
+                        <div class="price">Desde 50 bs</div>
+                        <a href="#contacto" class="btn">Consultar</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                    <img src=".//imagenes/logo4.jpg" alt="Logotipo 1">
+                       <!-- 🪵 -->
+                    </div>
+                    <div class="product-content">
+                        <h3>Etiquetas para Barriles</h3>
+                        <p>Diseños duraderos para identificación de barriles.</p>
+                        <div class="price">Desde 80 bs</div>
+                        <a href="#contacto" class="btn">Consultar</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                    <img src=".//imagenes/logo5.jpg" alt="Logotipo 1">
+                        <!-- 🏭 -->
+                    </div>
+                    <div class="product-content">
+                        <h3>Logotipos para Instalaciones</h3>
+                        <p>Señalización profesional para tu bodega.</p>
+                        <div class="price">Desde 50 bs</div>
+                        <a href="#contacto" class="btn">Consultar</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                    <img src=".//imagenes/calcomania5.jpg" alt="Logotipo 1">
+                        <!-- 📄 -->
+                    </div>
+                    <div class="product-content">
+                        <h3>Material Gráfico</h3>
+                        <p>Folletos, catálogos y tarjetas de presentación.</p>
+                        <div class="price">Desde 100 bs</div>
+                        <a href="#contacto" class="btn">Consultar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-title">
+                <h2>Testimonios</h2>
+                <p>Lo que dicen nuestros clientes sobre nuestros servicios</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Las calcomanías que diseñaron para nuestra bodega han mejorado notablemente la presentación de nuestros vinos. Los clientes siempre comentan lo profesional que se ven nuestras botellas.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">JM</div>
+                        <div class="author-info">
+                            <h4>Rodrigo Pereira</h4>
+                            <p>Bodega PURUVA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        El logotipo que crearon captura perfectamente la esencia de nuestro singani. Ha fortalecido nuestra identidad de marca y nos ha ayudado a destacar en ferias y eventos.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">CR</div>
+                        <div class="author-info">
+                            <h4>Weimar Ríos</h4>
+                            <p>Singani de Altura</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        Trabajar con ellos ha sido excelente. Entienden perfectamente las necesidades de las bodegas de Villa Abecia y ofrecen soluciones creativas y de calidad.
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-img">AG</div>
+                        <div class="author-info">
+                            <h4>Manuel Baptista Daroca</h4>
+                            <p>Bodega Cepas de mi Abuelo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contáctanos</h2>
+                <p>¿Listo para mejorar la imagen de tu bodega? Ponte en contacto con nosotros</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-item">
+                        <i>📍</i>
+                        <div>
+                            <p><strong>Dirección:</strong></p>
+                            <p>zona La Terminal, Villa Abecia, Bolivia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i>📞</i>
+                        <div>
+                            <p><strong>Teléfono:</strong></p>
+                            <p>+591 68612281  73324601</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i>✉️</i>
+                        <div>
+                            <p><strong>Email:</strong></p>
+                            <p>juanita.guevara@gmail.com  daniel.segovia@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i>🕒</i>
+                        <div>
+                            <p><strong>Horario:</strong></p>
+                            <p>Lunes a Viernes: 8:00 - 18:00</p>
+                            <p>Sábados: 9:00 - 13:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Nombre completo" required>
+                        <input type="email" placeholder="Correo electrónico" required>
+                        <input type="tel" placeholder="Teléfono">
+                        <textarea placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Villa Abecia Design</h3>
+                    <p>Especialistas en calcomanías y logotipos para bodegas de vinos y singanis de Villa Abecia.</p>
+                    <div class="social-links">
+                        <a href="#"><i>f</i></a>
+                        <a href="#"><i>in</i></a>
+                        <a href="#"><i>ig</i></a>
+                        <a href="#"><i>tw</i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#">Diseño de Logotipos</a></li>
+                        <li><a href="#">Calcomanías Personalizadas</a></li>
+                        <li><a href="#">Material Promocional</a></li>
+                        <li><a href="#">Señalización</a></li>
+                        <li><a href="#">Branding Corporativo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Villa Abecia Design. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
